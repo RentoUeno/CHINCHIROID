@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>CHINCHIROID</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>CHINCHIROID</h1>
+    プレイヤー人数を入力
+    <input type="number" id="population" value="3" min="1">
+    <button type="button"  id="make" onclick="changeplayers()">プレイヤー作成</button>
+    <ul id="player-list"></ul>
+    <!-- 【追加】合計点を表示するエリア -->
+    <div id="total-score-area" style="margin-top: 20px; font-size: 1.5em; font-weight: bold;">
+            全体の合計点: <span id="total-score">0</span>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
